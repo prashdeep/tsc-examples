@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "compile": "tsc",
-    "build":"echo build"
+    "build": "echo build"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/prashdeep/tsc-examples/issues"
   },
-  "homepage": "https://github.com/prashdeep/tsc-examples#readme"
+  "homepage": "https://github.com/prashdeep/tsc-examples#readme",
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
 }

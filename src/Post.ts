@@ -16,18 +16,19 @@ class Post {
         this._noOfLikes++;
     }
 
+    unlike = ()=> {
+        this._noOfLikes --;
+    }
+
     get noOfLikes():number{
         return this._noOfLikes;
     }
 }
 
-let post1 = new Post('Closures', 'Ravi');
-post1.like();
-post1.like();
-post1.like();
-post1.like();
-post1.like();
-post1.like();
-post1.like();
 
-console.log(post1.noOfLikes);
+export default Post;
+
+export function namedExport (arg:string){
+    console.log(`${arg} is exported`)
+}
+

@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var Post = /** @class */ (function () {
     function Post(_title, _authorName, _noOfLikes) {
         var _this = this;
@@ -7,6 +9,9 @@ var Post = /** @class */ (function () {
         this._noOfLikes = _noOfLikes;
         this.like = function () {
             _this._noOfLikes++;
+        };
+        this.unlike = function () {
+            _this._noOfLikes--;
         };
     }
     Object.defineProperty(Post.prototype, "title", {
@@ -32,12 +37,8 @@ var Post = /** @class */ (function () {
     });
     return Post;
 }());
-var post1 = new Post('Closures', 'Ravi');
-post1.like();
-post1.like();
-post1.like();
-post1.like();
-post1.like();
-post1.like();
-post1.like();
-console.log(post1.noOfLikes);
+exports.default = Post;
+function namedExport(arg) {
+    console.log(arg + " is exported");
+}
+exports.namedExport = namedExport;
