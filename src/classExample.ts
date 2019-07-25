@@ -19,7 +19,7 @@ export class Car{
 export class Employee{
    constructor(private _name:string, private dept:string, private age:number){
    }
-   get name(){
+   get name():string{
         return this.name;
    }
    set name(name){

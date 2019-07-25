@@ -1,4 +1,4 @@
-let sumFunc = function(a, b){
+let sumFunc = function(a:number, b:number){
     console.log(a+b);
 }
 
@@ -10,4 +10,4 @@ let arrowFunc = (a:number, b:number)=>{ console.log(a+b)};
 
 let arrowFunc2 = (a:number, b:number)=> console.log(a+b);
 
-let arrowFunction3 = message => console.log("Logging the message "+message); 
+let arrowFunction3 = (message:string) => console.log(`Logging the message  ${message}`); 
